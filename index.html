@@ -3,14 +3,14 @@
     <head>
       <title> Quizzard from 420 Street</title>
       <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="CSS/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
+      <link href="CSS/styles.css" rel="stylesheet" type="text/css">
       <script src="https://code.jquery.com/jquery-3.3.1.js" charset="utf-8"></script>
-      <script src="js/script.js"></script>
+      <script src="Js/scripts.js"></script>
+      </head>
+      <body>
       <div class="container">
         <div class= "jumbotron">
-          <form id="firstPart">
+          <form id="blankForm">
             <h1>Get ready to be quizzed </h1>
             <div class="row">
               <div class="col-md-6">
@@ -18,11 +18,13 @@
                   <div class="panel-heading">
                     <h3 class="panel-title">1.Which of the following is not used in styling? </h3>
                   </div>
-                  <div class="panel-body">
-                    <input type="radio" name="partOne" value="0"> CSS<br>
-                    <input type="radio" name="partOne" value="1"> JavaScript<br>
-                    <input type="radio" name="partOne" value="0"> jQuery<br>
-                    <input type="radio" name="partOne" value="0"> Bootstrap
+            <div class="panel-body">
+        <select class="form-control" id="styling">
+        <option value="0">CSS</option>
+        <option value="25">HTML</option>
+        <option value="0">Javascript</option>
+        <option value="0">Jquery</option>
+      </select>
                   </div>
                   <div class="panel-footer">
                     <h2> choose the right option </h2>
@@ -31,18 +33,19 @@
 <div class="col-md-6">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h3 class="panel-title">2.Which of these is not an HTML tag? </h3>
+                    <h3 class="panel-title">2.JavaScript is can be written </h3>
                   </div>
                   <div class="panel-body">
-                    <input type="radio" name="partTwo" value="0"> p <br>
-                    <input type="radio" name="partTwo" value="0"> em <br>
-                    <input type="radio" name="partTwo" value="1"> anchor <br>
-                    <input type="radio" name="partTWo" value="0"> href
-                  </div>
-                  <div class="panel-footer">
-                    <h2> choose the right option </h2>
-                  </div>
-                </div>
+          <select class="form-control" id="tag">
+          <option value="0">directly into HTML pages</option>
+          <option value="0">directly on the Server Script</option>
+          <option value="25">directly into JS file and included into HTML</option>
+          <option value="0">None of These</option>
+        </select>
+  <div class="panel-footer">
+      <h2> choose the right option </h2>
+</div>
+</div>
 </div>
 </div>
 <div class="row"
@@ -52,13 +55,52 @@
   <h3 class="panel-title">3. Which of these describes JavaScript as a language</h3>
 </div>
 <div class="panel-body">
-  <input type="radio" name="partThree" value="0"> application <br>
-  <input type="radio" name="partThree" value="1"> scripting  <br>
-  <input type="radio" name="partThree" value="0"> programming <br>
-  <input type="radio" name="partThree" value="0"> none of the above
+  <select class="form-control" id="java">
+  <option value="0">application</option>
+  <option value="0">programming</option>
+  <option value="25">scripting</option>
+  <option value="0">None of These</option>
+</select>
 </div>
 <div class="panel-footer">
   <h2> choose the right option </h2>
 </div>
 </div>
 </div>
+</div>
+<div class="row"
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+  <h3 class="panel-title">JavaScript is designed for following purpose</h3>
+</div>
+<div class="panel-body">
+  <select class="form-control" id="purpose">
+  <option value="0">server</option>
+  <option value="0">ISP</option>
+  <option value="25">Browser</option>
+  <option value="0">None of These</option>
+</select>
+</div>
+<div class="panel-footer">
+  <h2> choose the right option </h2>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <img src="Images/images.jpeg" alt="Code is life">
+  </div>
+</div>
+<div id="Finish">
+               <p> Click  here to submit </p>
+  <button type="button" name="Finish" class=btn></button>
+             </div>
+           </div>
+         </form>
+         <div id="finalScore"> </div>
+           <p>Click <span> <a href="index.html">here </span>to re-enter your answers </p>
+       </div>
+     </div>
+   </body>
+</html>
