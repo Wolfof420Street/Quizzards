@@ -1,8 +1,7 @@
 //==== Business logic====//
 
 $(document).ready(function() {
-
-$("form#blankForm").submit(function(event){
+$("#blankForm").submit(function(event){
  var styling = $("#styling").val();
   var tag = $("#tag").val();
    var purpose = $("#purpose").val();
@@ -13,8 +12,7 @@ $("#finalScore").text("You SCored: " + finalScore + " out of 100");
 
 //==== User Interface ====//
 
-$("form#blankForm").slideUp(1250);
-$("#finalScore").show(3000);
+$("#finalScore").show();
 event.preventDefault();
 });
 
