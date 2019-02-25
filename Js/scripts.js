@@ -8,11 +8,11 @@ $("#blankForm").submit(function(event){
     var java = $("#java").val();
 
 var finalScore = parseInt(styling)+parseInt(tag)+parseInt(purpose)+parseInt(java);
-$("#finalScore").text("You SCored: " + finalScore + " out of 100");
+$("#Finish").text("You SCored: " + finalScore + " out of 100");
+
 
 //==== User Interface ====//
-
-$("#finalScore").show();
+$("#Finish").show();
 event.preventDefault();
 });
 
