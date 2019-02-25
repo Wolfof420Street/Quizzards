@@ -3,3 +3,8 @@ h1 {
   font-size: 69px;
   font-style: italic;
 }
+body{
+  background-image: url(background.JPG);
+  font-family: sans-serif;
+  font-style: normal;
+}
